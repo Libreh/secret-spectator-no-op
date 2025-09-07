@@ -27,7 +27,7 @@ public class SecretSpectator implements ModInitializer {
     
     
     public static boolean canSeeOtherSpectators(ServerPlayerEntity player) {
-        return player.isSpectator() || player.hasPermissionLevel(2);
+        return player.isSpectator();
     }
     
     public static boolean canPlayerSeeThatOtherIsSpectator(ServerPlayerEntity player, ServerPlayerEntity other) {
